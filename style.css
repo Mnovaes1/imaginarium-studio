@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #0cbd9a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .mission, .vision {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .team {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .team-member {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    border-radius: 100%;
+  }
+  
+  .contact {
+    background-color: #e3e3e3;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #0cbd9a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+    }
+  
+    .team-member {
+      flex: 1 1 100%;
+    }
+  }
